@@ -26,7 +26,7 @@ const TopSectionInnerContainer = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 `;
 
@@ -38,18 +38,17 @@ const StandOutImageArc = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
- 
 `;
 
 const StandoutImage = styled.div`
-  width: 20.5em;
-  height: 35em;
+  width: 19.5em;
+  height: 33em;
 
   img {
     width: 100%;
     height: 100%;
-
-  
+    margin-top: 12px;
+    margin-left: 12px;
   }
 `;
 
