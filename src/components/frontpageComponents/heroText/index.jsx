@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Marginer } from "../../components/marginer";
+import { Marginer } from "../../marginer";
+// import { Marginer } from "../../components/marginer";
 import { Button } from "../button";
 
 const HeroText = styled.div`

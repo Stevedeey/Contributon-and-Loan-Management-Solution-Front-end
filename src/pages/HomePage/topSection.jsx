@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { HeroTextContainer } from "../.././components/heroText/";
+import { HeroTextContainer } from "../.././components/frontpageComponents/heroText/";
 
-import backImage from "../../images/homepageImages/banner.jpg";
-import heroImage from "../../images/homepageImages/iPhone X.png";
+// import backImage from "../../../public/images/homepageImages/banner.jpg";
+// import heroImage from "../../../public/images/homepageImages/iPhone X.png";
+  /* background: url(${backImage}); */
 
 const TopSectionContainer = styled.div`
   width: 100%;
   height: 700px;
-  background: url(${backImage});
+  background: url("./images/homepageImages/banner.jpg");
   background-position: 0px -150px;
   background-size: cover;
 `;
@@ -60,7 +61,10 @@ export function TopSection(props) {
           <HeroTextContainer />
           <StandOutImageArc>
             <StandoutImage>
-              <img src={heroImage} alt="ten-ten-iphone" />
+              <img
+                src="./images/homepageImages/iPhone X.png"
+                alt="ten-ten-iphone"
+              />
             </StandoutImage>
           </StandOutImageArc>
         </TopSectionInnerContainer>

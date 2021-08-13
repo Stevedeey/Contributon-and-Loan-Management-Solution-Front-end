@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Marginer } from "../../components/marginer";
+import { Marginer } from "../../marginer";
+// import { Marginer } from "../../components/marginer";
 
 const ButtonWrapper = styled.div`
   display: flex;
