@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Marginer } from "../../marginer";
-// import { Marginer } from "../../components/marginer";
 import { Button } from "../button";
 
 const HeroText = styled.div`
@@ -33,18 +32,28 @@ const SloganText = styled.p`
   text-align: left;
 `;
 
+const ButtonContainer = styled.div`
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+`;
+
 export function HeroTextContainer(props) {
   return (
     <HeroText>
       <HeroTitle>Get loans easily at the low Interests</HeroTitle>
-
       <Marginer direction="vertical" margin={5} />
       <SloganText>
         Our solution gives you easy Access to Loans at low Interests and also
         facilitates a smooth loan process operation
       </SloganText>
       <Marginer direction="vertical" margin={10} />
-      <Button />
+      <ButtonContainer>
+        <Button>Get started</Button>
+        <Button btnbkgColor={"#F1E4FF"} btnFgColor={"#8c30f5"} wth="">
+          Get the app
+        </Button>
+      </ButtonContainer>
     </HeroText>
   );
 }
