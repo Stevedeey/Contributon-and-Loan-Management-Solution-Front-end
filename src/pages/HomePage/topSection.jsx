@@ -2,10 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { HeroTextContainer } from "../.././components/frontpageComponents/heroText/";
 
-// import backImage from "../../../public/images/homepageImages/banner.jpg";
-// import heroImage from "../../../public/images/homepageImages/iPhone X.png";
-  /* background: url(${backImage}); */
-
 const TopSectionContainer = styled.div`
   width: 100%;
   height: 700px;
@@ -27,7 +23,7 @@ const TopSectionInnerContainer = styled.div`
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 `;
 
@@ -54,9 +50,11 @@ const StandoutImage = styled.div`
 `;
 
 export function TopSection(props) {
+  const {children} = props;
   return (
     <TopSectionContainer>
       <BackgroundFilter>
+        {children}
         <TopSectionInnerContainer>
           <HeroTextContainer />
           <StandOutImageArc>
