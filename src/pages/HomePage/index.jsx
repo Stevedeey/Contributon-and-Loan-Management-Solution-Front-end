@@ -13,6 +13,12 @@ import { BenefitSectionComponent } from "../../components/frontpageComponents/be
 
 import { GetCashSectionComponent } from "../../components/frontpageComponents/getCash/GetCashSection";
 
+import { CustomerExperienceSection } from "../../components/frontpageComponents/customerExperience/CustomerExperienceSection";
+
+import { LoanApplicationSection } from "../../components/frontpageComponents/loanApplicationSection/LoanApplicationSection";
+
+import { Footer } from "../../components/frontpageComponents/footer";
+
 const Title = styled.h1`
   font-weight: 900;
   color: #000;
@@ -46,6 +52,9 @@ function HomePage(props) {
       </InnerPageContainer>
       <GetCashSectionComponent />
       {/* Get cash is the one with the background */}
+      <CustomerExperienceSection />
+      <LoanApplicationSection />
+      <Footer />
     </PageContainer>
   );
 }

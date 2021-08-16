@@ -32,7 +32,7 @@ const Title = styled.h2`
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
-  margin-top: 70px;
+
 `;
 
 
