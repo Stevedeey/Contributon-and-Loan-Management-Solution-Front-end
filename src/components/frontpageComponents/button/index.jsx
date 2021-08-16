@@ -18,8 +18,8 @@ const ButtonWrapper = styled.div`
   background-color: ${({ btnbkgColor }) =>
     btnbkgColor ? btnbkgColor : "#8c30f5"}; // same for background col
 
-  border-radius: 6px;
-  /* width: 9.75em; */
+  border-radius: ${ ({rad}) => (rad ? rad : "6px")};
+ 
   width: ${({ wth }) => (wth ? wth : "9.75em")};
 
   height: ${({ heit }) => (heit ? heit : "3em")};
@@ -41,7 +41,7 @@ const ButtonWrapper = styled.div`
 `;
 
 export function Button(props) {
-  const { size, btnbkgColor, btnFgColor, wth, heit, pad } = props;
+  const { size, btnbkgColor, btnFgColor, wth, heit, pad, rad } = props;
 
   return (
     <ButtonWrapper
@@ -51,6 +51,7 @@ export function Button(props) {
       wth={wth}
       heit={heit}
       pad={pad}
+      rad={rad}
     >
       {props.children}
       <Marginer direction="horizontal" margin={10} />
