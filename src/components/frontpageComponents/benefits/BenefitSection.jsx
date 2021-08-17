@@ -5,11 +5,9 @@ import BenefitCard from "./BenefitsCard";
 const BenefitSection = styled.div`
   width: 100%;
   display: flex;
-  /* align-items: flex-end;
-  justify-content: space-between; */
+
+
 `;
-
-
 
 export function BenefitSectionComponent() {
   return (

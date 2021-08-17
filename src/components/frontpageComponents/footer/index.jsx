@@ -8,14 +8,14 @@ const FooterCourtesyandSocialMedia = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 50px;
   margin-top: -30px;
-  
 `;
 
 const SuperWrapper = styled.div`
   background-color: #8c30f5;
   width: 100%;
+  height: auto;
 `;
 
 const FooterWrapperRowToCentralize = styled.div`
@@ -42,7 +42,7 @@ const MenuItemSection = styled.div`
   display: flex;
   justify-content: center;
   color: #fff;
-  margin:30px;
+  margin: 30px;
   p {
     margin-right: 20px;
     font-size: 16px;
@@ -59,6 +59,34 @@ const LogoSection = styled.div`
   }
 `;
 
+
+
+const Instagram = styled.div`
+  width:34px;
+  height: 34px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+const Twitter = styled.div`
+  width: 34px;
+  height: 34px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+const Youtube = styled.div`
+  width: 34px;
+  height: 34px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
 const Courtsey = styled.div`
   ///© 2021 TenTen Solutions. All rights reserved
 
@@ -71,8 +99,10 @@ const Courtsey = styled.div`
 `;
 
 const Social = styled.div`
-  width: 25%;
-  height: 24px;
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 `;
 
 export function Footer() {
@@ -104,7 +134,19 @@ export function Footer() {
 
       <FooterCourtesyandSocialMedia>
         <Courtsey>© 2021 TenTen Solutions. All rights reserved</Courtsey>
-        <Social>Face book</Social>
+        <Social>
+          <Instagram>
+            <img src="./images/homepageImages/instagram.png" alt="" />
+          </Instagram>
+
+          <Twitter>
+            <img src="./images/homepageImages/twitter.png" alt="" />
+          </Twitter>
+
+          <Youtube>
+            <img src="./images/homepageImages/youtube.png" alt="" />
+          </Youtube>
+        </Social>
       </FooterCourtesyandSocialMedia>
       <div></div>
     </SuperWrapper>
