@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+// import Slider from "react-slick";
+
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
 const ImageOfPerson = styled.div`
   width: 300px;
   height: 186px;
@@ -52,7 +57,7 @@ const NamePlaceholder = styled.h4`
   font-size: 20px;
   line-height: 32px;
   font-feature-settings: "salt" on, "liga" off;
-  margin-top: -10px;
+  margin-top: 10px;
 `;
 
 const ImageAndTextRow = styled.div`
@@ -66,44 +71,64 @@ const ExperienceColumnWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
 const CardWrapper = styled.div`
+ 
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 `;
 
-const NextPreviousButtons = styled.div`
-  width: 52.82px;
-  height: 14px;
+// const CardWrapperForTitle = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-content: center;
+//   margin-top: 50px;
+// `;
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
-`;
+// const RowOrientationForTitle = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 30%;
+//   margin-left: 270px;
+// `;
+
+// const NextPreviousButtons = styled.div`
+//   width: 52.82px;
+//   height: 14px;
+
+//   img {
+//     width: 100%;
+//     height: 100%;
+//   }
+// `;
 
 const CunstomerExperienceCard = ({ para, namee, image, alt }) => {
-  return (
-    <CardWrapper>
-      <ImageAndTextRow>
-        <ImageOfPerson>
-          <img src={image} alt={alt} />
-        </ImageOfPerson>
-        <ExperienceColumnWrapper>
-          <Title>Experiences from Customers</Title>
-          <InvertedComma>
-            <img src="./images/homepageImages/invertedComma.png" alt="Inverted Comma" />
-          </InvertedComma>
-          <Paragraph>{para}</Paragraph>
-          <NamePlaceholder>{namee}</NamePlaceholder>
-          <NextPreviousButtons>
-            <img src="./images/homepageImages/nextPrev.png" alt="Next Prev Button"/>
-          </NextPreviousButtons>
-        </ExperienceColumnWrapper>
-      </ImageAndTextRow>
-    </CardWrapper>
+  return (     
+            <CardWrapper>
+              <ImageAndTextRow>
+                <ImageOfPerson>
+                  <img src={image} alt={alt} />
+                </ImageOfPerson>
+                <ExperienceColumnWrapper>
+                  <Title>Experiences from Customers</Title>
+                  <InvertedComma>
+                    <img
+                      src="./images/homepageImages/invertedComma.png"
+                      alt="Inverted Comma"
+                    />
+                  </InvertedComma>
+                  <Paragraph>{para}</Paragraph>
+                  <NamePlaceholder>{namee}</NamePlaceholder>
+                </ExperienceColumnWrapper>
+              </ImageAndTextRow>
+            </CardWrapper>
+          
   );
 };
 
