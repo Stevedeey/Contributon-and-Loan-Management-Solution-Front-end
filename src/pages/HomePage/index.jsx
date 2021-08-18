@@ -28,6 +28,7 @@ const Title = styled.h1`
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
+  margin-top: 48px;
 `;
 
 const ContentContainer = styled.div`
@@ -46,6 +47,7 @@ function HomePage(props) {
       <TopSection></TopSection>
       <InnerPageContainer>
         <ContentContainer>
+
           <Title>Benefits of working with us</Title>
           <BenefitSectionComponent />
         </ContentContainer>

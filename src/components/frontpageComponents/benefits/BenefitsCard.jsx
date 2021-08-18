@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
+import { Marginer } from "../../marginer";
 
-const BenefitCard = ({title, word, image, alt}) => {
-    return (
+const BenefitCard = ({ title, word, image, alt }) => {
+  return (
+    <>
+      <Marginer  direction ="vertical" margin= {50} />
       <BenfitSectionContent>
         <BenfitSectionIcon>
           <img src={image} alt={alt} />
@@ -18,8 +21,9 @@ const BenefitCard = ({title, word, image, alt}) => {
           </BenfitSectionIconTextBlockParagraph>
         </BenfitSectionIconTextBlock>
       </BenfitSectionContent>
-    );
-}
+    </>
+  );
+};
 
 const BenfitSectionContent = styled.div`
   display: flex;
@@ -66,4 +70,4 @@ const BenfitSectionIconTextBlockParagraph = styled.p`
   line-height: 26px;
 `;
 
-export default BenefitCard; 
+export default BenefitCard;
