@@ -1,11 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { deviceSize } from "../../responsive";
 
 
 
 const BrandLogoContainer = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width:${deviceSize.mobile}px){
+    justify-content: center;
+  }
 
 `;
 

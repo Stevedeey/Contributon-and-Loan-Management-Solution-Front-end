@@ -1,21 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-const FooterCourtesyandSocialMedia = styled.div`
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
-  margin-top: -30px;
-`;
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+
+
 
 const SuperWrapper = styled.div`
   background-color: #8c30f5;
   width: 100%;
-  height: auto;
+  height: 400px;
 `;
 
 const FooterWrapperRowToCentralize = styled.div`
@@ -29,6 +27,7 @@ const FooterWrapperRowToCentralize = styled.div`
 const FooterWrapperColumn = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 70px;
 `;
 
 const Centralize = styled.div`
@@ -59,37 +58,22 @@ const LogoSection = styled.div`
   }
 `;
 
+const SocialMedia = styled.div`
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color, 200ms ease-in-out;
 
+  &:not(:last-of-type) {
+    margin-right: 10px;
+  }
 
-const Instagram = styled.div`
-  width:34px;
-  height: 34px;
-  img {
-    width: 100%;
-    height: 100%;
+  &:hover {
+    color: #d0fcfd;
   }
 `;
 
-const Twitter = styled.div`
-  width: 34px;
-  height: 34px;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-`;
-
-const Youtube = styled.div`
-  width: 34px;
-  height: 34px;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-`;
 const Courtsey = styled.div`
-  ///© 2021 TenTen Solutions. All rights reserved
-
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -98,11 +82,34 @@ const Courtsey = styled.div`
   color: #fff;
 `;
 
-const Social = styled.div`
+const SocialMediaWrapper = styled.div`
   width: 15%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+`;
+
+const Flink = styled.a`
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:not(:last-of-type) {
+    margin-right: 5px;
+  }
+`;
+
+const FooterCourtesyandSocialMedia = styled.div`
+  padding: 30px 0;
+
+  margin: 0 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
 `;
 
 export function Footer() {
@@ -121,12 +128,25 @@ export function Footer() {
 
           <Centralize>
             <MenuItemSection>
-              <p>About</p>
-              <p>Features</p>
-              <p>Pricing</p>
-              <p>Careers</p>
-              <p>Help</p>
-              <p>Privacy Policy</p>
+              <Flink>
+                <p>About</p>
+              </Flink>
+              <Flink>
+                <p>Features</p>
+              </Flink>
+
+              <Flink>
+                <p>Pricing</p>
+              </Flink>
+              <Flink>
+                <p>Careers</p>
+              </Flink>
+              <Flink>
+                <p>Help</p>
+              </Flink>
+              <Flink>
+                <p>Privacy Policy</p>
+              </Flink>
             </MenuItemSection>
           </Centralize>
         </FooterWrapperColumn>
@@ -134,19 +154,19 @@ export function Footer() {
 
       <FooterCourtesyandSocialMedia>
         <Courtsey>© 2021 TenTen Solutions. All rights reserved</Courtsey>
-        <Social>
-          <Instagram>
-            <img src="./images/homepageImages/instagram.png" alt="" />
-          </Instagram>
+        <SocialMediaWrapper>
+          <SocialMedia>
+            <FontAwesomeIcon icon={faInstagram} />
+          </SocialMedia>
 
-          <Twitter>
-            <img src="./images/homepageImages/twitter.png" alt="" />
-          </Twitter>
+          <SocialMedia>
+            <FontAwesomeIcon icon={faTwitter} />
+          </SocialMedia>
 
-          <Youtube>
-            <img src="./images/homepageImages/youtube.png" alt="" />
-          </Youtube>
-        </Social>
+          <SocialMedia>
+            <FontAwesomeIcon icon={faFacebook} />
+          </SocialMedia>
+        </SocialMediaWrapper>
       </FooterCourtesyandSocialMedia>
       <div></div>
     </SuperWrapper>

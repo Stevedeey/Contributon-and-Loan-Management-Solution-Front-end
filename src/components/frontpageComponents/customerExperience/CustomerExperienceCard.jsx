@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { deviceSize } from "../../responsive";
 
 // import Slider from "react-slick";
 
@@ -8,8 +9,13 @@ import styled from "styled-components";
 
 const ImageOfPerson = styled.div`
   width: 300px;
-  height: 186px;
+  height: 200px;
   margin-right: 100px;
+
+  @media screen and (max-width: ${deviceSize.mobile}px) {
+    width: 200px;
+    height: 200px;
+  }
 
   img {
     width: 100%;
@@ -58,6 +64,9 @@ const NamePlaceholder = styled.h4`
   line-height: 32px;
   font-feature-settings: "salt" on, "liga" off;
   margin-top: 10px;
+  @media screen and (max-width: ${deviceSize.mobile}px) {
+    margin-top: -10px;
+  }
 `;
 
 const ImageAndTextRow = styled.div`
@@ -65,6 +74,11 @@ const ImageAndTextRow = styled.div`
   justify-content: center;
   align-items: center;
   width: 50%;
+  @media screen and (max-width: ${deviceSize.mobile}px) {
+    margin-top: 100px;
+    flex-flow:  column-reverse wrap;
+ 
+  }
 `;
 
 const ExperienceColumnWrapper = styled.div`
@@ -73,7 +87,6 @@ const ExperienceColumnWrapper = styled.div`
 `;
 
 const CardWrapper = styled.div`
- 
   width: 100%;
   height: 100%;
   display: flex;
@@ -109,26 +122,25 @@ const CardWrapper = styled.div`
 // `;
 
 const CunstomerExperienceCard = ({ para, namee, image, alt }) => {
-  return (     
-            <CardWrapper>
-              <ImageAndTextRow>
-                <ImageOfPerson>
-                  <img src={image} alt={alt} />
-                </ImageOfPerson>
-                <ExperienceColumnWrapper>
-                  <Title>Experiences from Customers</Title>
-                  <InvertedComma>
-                    <img
-                      src="./images/homepageImages/invertedComma.png"
-                      alt="Inverted Comma"
-                    />
-                  </InvertedComma>
-                  <Paragraph>{para}</Paragraph>
-                  <NamePlaceholder>{namee}</NamePlaceholder>
-                </ExperienceColumnWrapper>
-              </ImageAndTextRow>
-            </CardWrapper>
-          
+  return (
+    <CardWrapper>
+      <ImageAndTextRow>
+        <ImageOfPerson>
+          <img src={image} alt={alt} />
+        </ImageOfPerson>
+        <ExperienceColumnWrapper>
+          <Title>Experiences from Customers</Title>
+          <InvertedComma>
+            <img
+              src="./images/homepageImages/invertedComma.png"
+              alt="Inverted Comma"
+            />
+          </InvertedComma>
+          <Paragraph>{para}</Paragraph>
+          <NamePlaceholder>{namee}</NamePlaceholder>
+        </ExperienceColumnWrapper>
+      </ImageAndTextRow>
+    </CardWrapper>
   );
 };
 

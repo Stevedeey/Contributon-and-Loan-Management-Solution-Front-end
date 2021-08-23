@@ -16,9 +16,7 @@ const MenuItemSection = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: -78px;
-  
-
+   
   p {
     color: #ddd;
     margin-right: 15px;

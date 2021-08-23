@@ -22,13 +22,21 @@ import { Footer } from "../../components/frontpageComponents/footer";
 const Title = styled.h1`
   font-weight: 900;
   color: #000;
-  width: 520px;
+  /* width: 520px; */
   text-align: left;
   font-family: Poppins;
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
   margin-top: 48px;
+
+  @media screen and (max-width: ${deviceSize.mobile}px) {
+    margin-top: 50px !important;
+    font-size: 2.5em;
+    width: 80%;
+    margin: 0 auto;
+
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -38,6 +46,10 @@ const ContentContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 1em;
+
+  @media screen and (max-width: ${deviceSize.mobile}px) {
+   padding: 5px;
+  }
 `;
 
 function HomePage(props) {
@@ -47,7 +59,6 @@ function HomePage(props) {
       <TopSection></TopSection>
       <InnerPageContainer>
         <ContentContainer>
-
           <Title>Benefits of working with us</Title>
           <BenefitSectionComponent />
         </ContentContainer>
