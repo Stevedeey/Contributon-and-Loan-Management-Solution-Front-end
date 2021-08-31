@@ -4,9 +4,16 @@ import {
   InnerPageContainer,
   PageContainer,
 } from "../../components/frontpageComponents/pageMainContainer";
-import { Navbar } from "../../components/frontpageComponents/navbar";
+
+// import { Navbar } from "../../components/frontpageComponents/navbar";
+
+import { NavBarr } from "../../components/frontpageComponents/navbar2/NavBarr";
+
+
 import { TopSection } from "./topSection";
+
 import styled from "styled-components";
+
 import { deviceSize } from "../../components/responsive";
 
 import { BenefitSectionComponent } from "../../components/frontpageComponents/benefits/BenefitSection";
@@ -54,21 +61,24 @@ const ContentContainer = styled.div`
 
 function HomePage(props) {
   return (
-    <PageContainer>
-      <Navbar />
-      <TopSection></TopSection>
-      <InnerPageContainer>
-        <ContentContainer>
-          <Title>Benefits of working with us</Title>
-          <BenefitSectionComponent />
-        </ContentContainer>
-      </InnerPageContainer>
-      <GetCashSectionComponent />
-      {/* Get cash is the one with the background */}
-      <CustomerExperienceSection />
-      <LoanApplicationSection />
-      <Footer />
-    </PageContainer>
+    <>
+      <NavBarr />
+      <PageContainer>
+        {/* <Navbar /> */}
+        <TopSection></TopSection>
+        <InnerPageContainer>
+          <ContentContainer>
+            <Title>Benefits of working with us</Title>
+            <BenefitSectionComponent />
+          </ContentContainer>
+        </InnerPageContainer>
+        <GetCashSectionComponent />
+        {/* Get cash is the one with the background */}
+        <CustomerExperienceSection />
+        <LoanApplicationSection />
+        <Footer />
+      </PageContainer>
+    </>
   );
 }
 
