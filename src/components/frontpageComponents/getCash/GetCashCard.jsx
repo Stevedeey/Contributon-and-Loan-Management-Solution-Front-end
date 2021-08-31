@@ -5,7 +5,7 @@ const GetCashSectionContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:25%;
+
   margin: 20px;
   padding: 20px;
 

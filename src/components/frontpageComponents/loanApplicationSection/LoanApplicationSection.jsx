@@ -4,24 +4,37 @@ import { Button } from "../button";
 
 const LoanApplicationWrapper = styled.div`
   width: 100%;
-  height: 500px;
+  
+
 `;
 
 const LoanApplicationContentWrapper = styled.div`
-  margin-top: 100px;
+  margin: 100px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+
+  @media screen and (max-width: 764px) {
+    flex-direction: column;
+  }
 `;
 const LeftImageContainer = styled.div`
   width: 568px;
   height: 272px;
   margin-right: -80px;
-
   img {
     width: 100%;
     height: 100%;
   }
+   @media screen and (max-width: 1147px) {
+   
+      img{
+        width: 80%;
+        height: 80%;
+      }
+    }
+
 `;
 
 const ApplyForLoanTextAndButtonWrapper = styled.div`
@@ -41,6 +54,11 @@ const ApplyForLoanText = styled.h1`
   line-height: 64px;
   text-align: center;
   font-feature-settings: "salt" on, "liga" off;
+
+  @media screen and (max-width: 908px) {
+    font-size: 38px;
+    width: 298px;
+  }
 `;
 
 export function LoanApplicationSection() {
@@ -72,5 +90,3 @@ export function LoanApplicationSection() {
     </LoanApplicationWrapper>
   );
 }
-
-// export default LoanApplicationSection

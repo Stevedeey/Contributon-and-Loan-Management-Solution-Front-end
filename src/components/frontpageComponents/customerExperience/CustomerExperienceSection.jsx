@@ -3,15 +3,23 @@ import styled from "styled-components";
 
 import CustomerExperienceCard from "./CustomerExperienceCard";
 import "./CustomerExperience.css";
+import { deviceSize } from "../../responsive";
+import { useMediaQuery } from "react-responsive";
 
 const CustomerExperienceSectionWrapper = styled.div`
   width: 100%;
   background-color: #faf6ff;
   height: 529px;
 
+  @media screen and (max-width: ${deviceSize.mobile}px) {
+    padding: 100px 0;
+    height: 729px;
+  }
 `;
 
 export function CustomerExperienceSection() {
+  const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile });
+
   return (
     <CustomerExperienceSectionWrapper>
       <div
@@ -24,35 +32,35 @@ export function CustomerExperienceSection() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "-50px"
+          marginTop: "-50px",
         }}
       >
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-       
-        </div>
-       
+        {!isMobile && (
+          <div className="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              className="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+        )}
+
         <div className="carousel-inner">
-          
           <div className="carousel-item active">
             <CustomerExperienceCard
               para={
@@ -82,7 +90,6 @@ export function CustomerExperienceSection() {
               image={"./images/homepageImages/testimonial.png"}
             ></CustomerExperienceCard>
           </div>
-
         </div>
 
         <button

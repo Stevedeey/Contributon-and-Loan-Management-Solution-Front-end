@@ -7,12 +7,18 @@ const BenefitSection = styled.div`
   display: flex;
 
 
+
+  @media screen and (max-width:786px){
+      display: flex;
+      flex-direction: column;
+  }
+ 
 `;
 
 export function BenefitSectionComponent() {
   return (
     <BenefitSection>
-      <div>
+      <div className="mini-flex">
         <BenefitCard
           title={"Fast Payment"}
           word={
@@ -32,7 +38,7 @@ export function BenefitSectionComponent() {
         />
       </div>
 
-      <div>
+      <div className="mini-flex">
         <BenefitCard
           title={"Customer Services"}
           word={

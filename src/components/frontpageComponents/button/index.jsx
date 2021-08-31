@@ -5,7 +5,7 @@ import { Marginer } from "../../marginer";
 const ButtonWrapper = styled.div`
   border: none;
   outline: none;
-  padding: ${({pad})=>(pad ? pad : "7px 30px")};
+  padding: ${({ pad }) => (pad ? pad : "7px 30px")};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,8 +18,8 @@ const ButtonWrapper = styled.div`
   background-color: ${({ btnbkgColor }) =>
     btnbkgColor ? btnbkgColor : "#8c30f5"}; // same for background col
 
-  border-radius: ${ ({rad}) => (rad ? rad : "6px")};
- 
+  border-radius: ${({ rad }) => (rad ? rad : "6px")};
+
   width: ${({ wth }) => (wth ? wth : "9.75em")};
 
   height: ${({ heit }) => (heit ? heit : "3em")};
@@ -37,6 +37,9 @@ const ButtonWrapper = styled.div`
 
   &:focus {
     outline: none;
+  }
+  @media screen and (max-width: 400px) {
+   margin-top: 10px;
   }
 `;
 
