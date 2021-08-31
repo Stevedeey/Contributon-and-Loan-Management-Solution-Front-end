@@ -7,7 +7,7 @@ function Mobile() {
       {/* <div id="mobile-button">
         <Toggle />
       </div> */}
-      <a href="#" id="mobile-button">
+      <a href="r" id="mobile-button">
         <Toggle />
       </a>
     </>

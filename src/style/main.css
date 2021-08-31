@@ -10,10 +10,11 @@
   overflow-x: hidden;
   padding-top: 120px;
   transition: 0.5s;
+  font-family: Poppins;
 }
 
 /* The sidebar links */
-.sidebar a {
+ .sidebar span {
   text-align: center;
   justify-content: center;
   text-decoration: none;
@@ -23,7 +24,13 @@
   transition: 0.3s;
 }
 
-.sidebar2 a {
+
+.sidebars span, .sidebar2 span{
+  display: block;
+  padding: 12px 2px;
+}
+
+ .sidebar2 span {
   padding: 8px 8px 8px 20px;
   text-decoration: none;
   color: #818181;
@@ -105,10 +112,13 @@
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  left: 35%;
+  /* position: absolute; 
+  top: 0; 
+  left: 15%; */
+  margin-top: -120px;
+  margin-bottom: 100px;
   font-size: 36px;
+
   padding-top: 16px;
 }
 
@@ -153,7 +163,7 @@
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav a, .topnav span {
   float: left;
   text-align: center;
   text-decoration: none;
@@ -170,11 +180,11 @@
   float: right;
 }
 
-.topnav-right a {
+.topnav-right a, .topnav-right span {
   padding: 0px 0px 0px 10px;
 }
 
-a img {
+a img, span img {
   border-radius: 50%;
   width: 32px;
   height: 32px;
