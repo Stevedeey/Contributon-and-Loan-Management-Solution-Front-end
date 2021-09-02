@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import { BrandLogo } from "../brandLogo";
 import { Button } from "../button";
+import "../../../style/components/navbar.css";
 
 const NavContainer = styled.nav`
   /* #show{
@@ -70,75 +71,75 @@ const LogoSection = styled.div`
   margin-right: 5px;
 `;
 
+
 export function NavBarr() {
-  //   const [state, setState] = useState(false);
 
   return (
-    <NavContainer className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid" id="foo">
-        {/* <a className="navbar-brand" href="e">
-          Navbar scroll
-        </a> */}
-        <LogoSection>
-          <BrandLogo />
-        </LogoSection>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarScroll">
-          <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="e">
-                Home
-              </a>
-            </li>
+    <div className="fixAtop">
+      <NavContainer className="navbar navbar-expand-lg navbar-light bg-light ">
+        <div className="container-fluid " id="foo">
+          <LogoSection>
+            <BrandLogo />
+          </LogoSection>
 
-            <li className="nav-item">
-              <a className="nav-link" href="e">
-                Loan
-              </a>
-            </li>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarScroll">
+            <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="e">
+                  Home
+                </a>
+              </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="e">
-                Contact
-              </a>
-            </li>
+              <li className="nav-item">
+                <a className="nav-link" href="e">
+                  Loan
+                </a>
+              </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="e">
-                FAQ
-              </a>
-            </li>
-          </ul>
-          <div className="d-flex auth-button-container">
-            <Button size={12} wth={"4.875em"} heit={"2.5em"}>
-              Login
-            </Button>
-            <Button
-              size={12}
-              btnbkgColor={"#F1E4FF"}
-              btnFgColor={"#8c30f5"}
-              wth={"90px"}
-              heit={"2.5em"}
-              pad={"0px 5px"}
-            >
-              Sign up
-            </Button>
+              <li className="nav-item">
+                <a className="nav-link" href="e">
+                  Contact
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="e">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+            <div className="d-flex auth-button-container">
+              <Button size={12} wth={"4.875em"} heit={"2.5em"}>
+                Login
+              </Button>
+              <Button
+                size={12}
+                btnbkgColor={"#F1E4FF"}
+                btnFgColor={"#8c30f5"}
+                wth={"90px"}
+                heit={"2.5em"}
+                pad={"0px 5px"}
+              >
+                Sign up
+              </Button>
+            </div>
+
+            {/* </form> */}
           </div>
-
-          {/* </form> */}
         </div>
-      </div>
-    </NavContainer>
+      </NavContainer>
+    </div>
   );
 }
 
