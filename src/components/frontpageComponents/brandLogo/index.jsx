@@ -15,13 +15,16 @@ const BrandLogoContainer = styled.div`
 `;
 
 const LogoImage = styled.div`
-  width: ${({ size }) => (size ? size + "px" : "144px")};
-  height: ${({ size }) => (size ? size + "px" : "26px")};
+  /* width: ${({ size }) => (size ? size + "px" : "144px")};
+  height: ${({ size }) => (size ? size + "px" : "26px")}; */
+
+  width: ${({ size }) => (size ? size + "px" : "100px")};
+  height: ${({ size }) => (size ? size + "px" : "16px")};
+  margin-top: -10px;
 
   img {
     width: 100%;
     height: 100%;
-    
   }
 `;
 

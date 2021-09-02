@@ -1,0 +1,12 @@
+.fixAtop {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 9000;
+  top: 0;
+}
+
+.navbar-nav{
+    font-size: 14px;
+   font-family: Poppins  !important;
+   font-weight: 500;
+}
