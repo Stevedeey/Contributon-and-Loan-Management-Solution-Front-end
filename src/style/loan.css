@@ -5,6 +5,15 @@
   margin-bottom: 25px;
 }
 
+.loan-info {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 29px;
+  color: #787777;
+}
+
 .background-right {
   width: 45%;
   border-top-right-radius: 18px;

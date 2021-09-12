@@ -20,16 +20,7 @@ function Info() {
                 <h2>there !!!</h2>
               </div>
               <br />
-              <div
-                style={{
-                  fontFamily: "Poppins",
-                  fontStyle: "normal",
-                  fontWeight: "normal",
-                  fontSize: "14px",
-                  lineHeight: "29px",
-                  color: "#787777",
-                }}
-              >
+              <div className="loan-info">
                 Here is the breakdown of your loan application, you are
                 obligated to fufill this Contract
               </div>
