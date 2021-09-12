@@ -33,13 +33,15 @@ function Info() {
                 Here is the breakdown of your loan application, you are
                 obligated to fufill this Contract
               </div>
-              <div className="terms-amount">
-                <p>Loan Amount</p>
-                <p>Loan Term</p>
-              </div>
-              <div className="terms-amount2">
-                <p>20,000</p>
-                <p>3 Months</p>
+              <div className="terms">
+                <div className="terms-amount">
+                  <p>Loan Amount</p>
+                  <p>20,000</p>
+                </div>
+                <div className="terms-amount2">
+                  <p>Loan Term</p>
+                  <p>3 Months</p>
+                </div>
               </div>
               <br />
               <p>Interest rate per Month</p>
