@@ -1,7 +1,7 @@
 import React from "react";
 import Dashboard from "../../components/Dashboard";
 import { useHistory } from "react-router-dom";
-import Initiate from "./Initiate";
+import Info from "./info.jsx";
 
 function LoanPage() {
   const history = useHistory();
@@ -9,7 +9,7 @@ function LoanPage() {
 
   return (
     <Dashboard
-      Content={<Initiate />}
+      Content={<Info />}
       status={state ? state : { id: "apply", toggle: true }}
     />
   );
