@@ -1,3 +1,5 @@
+/********************************************************* Loan Info UI *********************************************************/
+/***************************************************************************************************************************/
 .loan {
   font-family: Poppins;
   width: 100%;
@@ -266,5 +268,114 @@
 
   .head-title {
     font-size: 25px;
+  }
+}
+
+/********************************************************* APPLY UI *********************************************************/
+/***************************************************************************************************************************/
+.main-body {
+  padding: 9% 3% 9% 3%;
+}
+
+.main-body input,
+.main-body select {
+  height: 50px;
+}
+
+.main-body form .mb-3 {
+  margin-bottom: 9% !important;
+}
+
+.main-body form label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.main-body .guarantor-section {
+  width: 80%;
+  margin: auto;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 45px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #333333;
+}
+
+.main-body .quickinfo {
+  width: 80%;
+  margin: 2% auto;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666;
+}
+
+.main-body .next {
+  width: 80%;
+  margin: auto;
+}
+
+.main-body .next button {
+  width: 100px;
+  background: #8c30f5;
+  color: #fff;
+}
+
+.loan-app {
+  width: 80%;
+  margin: auto;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 520;
+  font-size: 24px;
+  line-height: 45px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #333333;
+}
+
+.main-body .apply-left {
+  padding-left: 0;
+}
+
+.main-body .apply-right {
+  padding-right: 0;
+}
+
+.main-body .segment {
+  width: 80%;
+  margin: 4% auto;
+}
+
+@media (max-width: 768px) {
+  .main-body form label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-body .apply-left {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .main-body .apply-right {
+    padding-left: 0;
+  }
+
+  .loan-app {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-body {
+    padding: 9% 0% 9% 0%;
   }
 }
