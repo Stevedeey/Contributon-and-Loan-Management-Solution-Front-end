@@ -7,7 +7,7 @@ function Apply() {
       {/* /* Title Head */}
       <div className="head-title">Apply for a Loan</div>
       {/* Main Body */}
-      <div className="main-body">
+      <div className="main-body apply">
         <div className="loan-app">Loan Application</div>
         <div className="row segment">
           <div className="col-sm-6 order-md-1 apply-left">
