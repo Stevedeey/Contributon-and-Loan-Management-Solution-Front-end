@@ -13,7 +13,7 @@ function Apply() {
           <div className="col-sm-6 order-md-1 apply-left">
             <form>
               <div className="mb-3">
-                <label htmlFor="account-name" className="htmlForm-label">
+                <label htmlFor="account-name" className="form-label">
                   Account Name
                 </label>
                 <input
