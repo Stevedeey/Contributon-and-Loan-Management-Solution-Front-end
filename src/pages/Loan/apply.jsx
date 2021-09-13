@@ -12,30 +12,40 @@ function Apply() {
         <div className="row segment">
           <div className="col-sm-6 order-md-1 apply-left">
             <form>
-              <div class="mb-3">
-                <label for="account-name" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="account-name" className="htmlForm-label">
                   Account Name
                 </label>
-                <input type="number" class="form-control" id="account-name" />
+                <input
+                  type="number"
+                  className="form-control"
+                  id="account-name"
+                />
               </div>
-              <div class="mb-3">
-                <label for="bank-name" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="bank-name" className="form-label">
                   Bank Name
                 </label>
-                <input type="text" class="form-control" id="bank-name" />
+                <input type="text" className="form-control" id="bank-name" />
               </div>
-              <div class="mb-3">
-                <label for="bvn" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="bvn" className="form-label">
                   Bvn
                 </label>
-                <input type="number" class="form-control" id="bvn" />
+                <input type="number" className="form-control" id="bvn" />
               </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="exampleInputPassword1" className="form-label">
                   Employment Status
                 </label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Choose a Status</option>
+                <select
+                  defaultValue={"DEFAULT"}
+                  className="form-select"
+                  aria-label="Default select example"
+                >
+                  <option value="DEFAULT" disabled>
+                    Choose a Status
+                  </option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
@@ -45,34 +55,48 @@ function Apply() {
           </div>
           <div className="col-sm-6 order-md-2 apply-right">
             <form>
-              <div class="mb-3">
-                <label for="account-number" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="account-number" className="form-label">
                   Account Number
                 </label>
-                <input type="number" class="form-control" id="account-number" />
+                <input
+                  type="number"
+                  className="form-control"
+                  id="account-number"
+                />
               </div>
-              <div class="mb-3">
-                <label for="Loan-amount" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="Loan-amount" className="form-label">
                   Loan Amount
                 </label>
-                <input type="number" class="form-control" id="Loan-amount" />
+                <input
+                  type="number"
+                  className="form-control"
+                  id="Loan-amount"
+                />
               </div>
-              <div class="mb-3">
-                <label for="repayment-period" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="repayment-period" className="form-label">
                   Repayment Period
                 </label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Choose a Repayment Period</option>
+                <select
+                  defaultValue={"DEFAULT"}
+                  className="form-select"
+                  aria-label="Default select example"
+                >
+                  <option value="DEFAULT" disabled>
+                    Choose a Repayment Period
+                  </option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div class="mb-3">
-                <label for="reason" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="reason" className="form-label">
                   Reason for Loan
                 </label>
-                <input type="text" class="form-control" id="reason" />
+                <input type="text" className="form-control" id="reason" />
               </div>
             </form>
           </div>
@@ -87,23 +111,23 @@ function Apply() {
         <div className="row segment">
           <div className="col-sm-6 order-md-1 apply-left">
             <form>
-              <div class="mb-3">
-                <label for="guarantor-fullname" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="guarantor-fullname" className="form-label">
                   Guarantor Fullname (1)
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="guarantor-fullname"
                 />
               </div>
-              <div class="mb-3">
-                <label for="guarantor-fullname2" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="guarantor-fullname2" className="form-label">
                   Guarantor Fullname (2)
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="guarantor-fullname2"
                 />
               </div>
@@ -111,17 +135,17 @@ function Apply() {
           </div>
           <div className="col-sm-6 order-md-2 apply-right">
             <form>
-              <div class="mb-3">
-                <label for="guarantor" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="guarantor" className="form-label">
                   Guarantor Association Number (1)
                 </label>
-                <input type="number" class="form-control" id="guarantor" />
+                <input type="number" className="form-control" id="guarantor" />
               </div>
-              <div class="mb-3">
-                <label for="guarantor2" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="guarantor2" className="form-label">
                   Guarantor Association Number (2)
                 </label>
-                <input type="number" class="form-control" id="guarantor2" />
+                <input type="number" className="form-control" id="guarantor2" />
               </div>
             </form>
           </div>
