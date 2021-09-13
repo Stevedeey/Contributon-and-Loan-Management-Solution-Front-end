@@ -2,9 +2,9 @@ import React from "react";
 import Dashboard from "../../components/Dashboard";
 import { useHistory } from "react-router-dom";
 import "../../style/loan.css";
-// import Info from "./info.jsx";
+import Info from "./info.jsx";
 // import Apply from "./apply";
-import Summary from "./summary";
+// import Summary from "./summary";
 
 function LoanPage() {
   const history = useHistory();
@@ -12,7 +12,7 @@ function LoanPage() {
 
   return (
     <Dashboard
-      Content={<Summary />}
+      Content={<Info />}
       status={state ? state : { id: "apply", toggle: true }}
     />
   );
