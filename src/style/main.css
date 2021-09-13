@@ -14,7 +14,7 @@
 }
 
 /* The sidebar links */
- .sidebar span {
+.sidebar span {
   text-align: center;
   justify-content: center;
   text-decoration: none;
@@ -24,13 +24,13 @@
   transition: 0.3s;
 }
 
-
-.sidebars span, .sidebar2 span{
+.sidebars span,
+.sidebar2 span {
   display: block;
   padding: 12px 2px;
 }
 
- .sidebar2 span {
+.sidebar2 span {
   padding: 8px 8px 8px 20px;
   text-decoration: none;
   color: #818181;
@@ -163,7 +163,8 @@
 }
 
 /* Style the links inside the navigation bar */
-.topnav a, .topnav span {
+.topnav a,
+.topnav span {
   float: left;
   text-align: center;
   text-decoration: none;
@@ -180,11 +181,13 @@
   float: right;
 }
 
-.topnav-right a, .topnav-right span {
+.topnav-right a,
+.topnav-right span {
   padding: 0px 0px 0px 10px;
 }
 
-a img, span img {
+a img,
+span img {
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -218,6 +221,13 @@ a img, span img {
   .sidebar,
   .sidebar2 {
     display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-body {
+    border-radius: 0;
+    margin: 2.5% 0 2.5% 0;
   }
 }
 

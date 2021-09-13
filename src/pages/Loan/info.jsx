@@ -5,8 +5,8 @@ import sideImg from "../../images/doodle.png";
 function Info() {
   return (
     <div>
-      <div className="head-title ">Apply for loan</div>
-      <div className="container initiate">
+      <div className="head-title">Apply for loan</div>
+      <div className="initiate">
         <div className="row loan">
           <div className="col-sm-6 order-md-2 background-right">
             <div className="container right-container">
