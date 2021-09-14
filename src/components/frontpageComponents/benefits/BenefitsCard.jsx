@@ -31,7 +31,7 @@ const BenefitSectionContent = styled.div`
   align-items: center;
 
   .img-icon {
-    width: ${({ size }) => (size ? size + "px" : "78px")};
+    width: ${({ size }) => (size ? size + "px" : "72px")};
     height: ${({ size }) => (size ? size + "px" : "66px")};
     margin-right: 30px;
 

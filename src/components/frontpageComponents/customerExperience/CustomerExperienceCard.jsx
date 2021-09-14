@@ -7,13 +7,16 @@ import { deviceSize } from "../../responsive";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
+
 const ImageOfPerson = styled.div`
   width: 300px;
+
   height: 200px;
   margin-right: 100px;
 
+
   @media screen and (max-width: ${deviceSize.mobile}px) {
-    width: 200px;
+    width: 300px;
     height: 200px;
   }
 
@@ -94,39 +97,14 @@ const CardWrapper = styled.div`
   align-items: center;
 `;
 
-// const CardWrapperForTitle = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-content: center;
-//   margin-top: 50px;
-// `;
 
-// const RowOrientationForTitle = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 30%;
-//   margin-left: 270px;
-// `;
-
-// const NextPreviousButtons = styled.div`
-//   width: 52.82px;
-//   height: 14px;
-
-//   img {
-//     width: 100%;
-//     height: 100%;
-//   }
-// `;
 
 const CunstomerExperienceCard = ({ para, namee, image, alt }) => {
   return (
     <CardWrapper>
       <ImageAndTextRow>
         <ImageOfPerson>
-          <img src={image} alt={alt} />
+          <img className="rounded-circle" src={image} alt={alt} />
         </ImageOfPerson>
         <ExperienceColumnWrapper>
           <Title>Experiences from Customers</Title>
