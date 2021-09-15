@@ -1,8 +1,9 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import { HeroTextContainer } from "../.././components/frontpageComponents/heroText/";
-import { deviceSize } from "../../components/responsive";
+import { HeroTextContainer } from "../../components/FrontpageComponents/heroText";
+
+import { deviceSize } from "../../components/Responsive";
 
 const TopSectionContainer = styled.div`
   width: 100%;

@@ -1,30 +1,30 @@
 import React from "react";
-//import { PageContainer } from "../../components/pageMainContainer";
+
 import {
   InnerPageContainer,
   PageContainer,
-} from "../../components/frontpageComponents/pageMainContainer";
+} from "../../components/FrontpageComponents/pageMainContainer";
 
-// import { Navbar } from "../../components/frontpageComponents/navbar";
 
-import { NavBarr } from "../../components/frontpageComponents/navbar2/NavBarr";
+
+import { NavBarr } from "../../components/FrontpageComponents/navbar/NavBarr";
 
 
 import { TopSection } from "./topSection";
 
 import styled from "styled-components";
 
-import { deviceSize } from "../../components/responsive";
+import { deviceSize } from "../../components/Responsive";
 
-import { BenefitSectionComponent } from "../../components/frontpageComponents/benefits/BenefitSection";
+import { BenefitSectionComponent } from "../../components/FrontpageComponents/benefits/BenefitSection";
 
-import { GetCashSectionComponent } from "../../components/frontpageComponents/getCash/GetCashSection";
+import { GetCashSectionComponent } from "../../components/FrontpageComponents/getCash/GetCashSection";
 
-import { CustomerExperienceSection } from "../../components/frontpageComponents/customerExperience/CustomerExperienceSection";
+import { CustomerExperienceSection } from "../../components/FrontpageComponents/customerExperience/CustomerExperienceSection";
 
-import { LoanApplicationSection } from "../../components/frontpageComponents/loanApplicationSection/LoanApplicationSection";
+import { LoanApplicationSection } from "../../components/FrontpageComponents/loanApplicationSection/LoanApplicationSection";
 
-import { Footer } from "../../components/frontpageComponents/footer";
+import { Footer } from "../../components/FrontpageComponents/footer";
 
 const Title = styled.h1`
   font-weight: 900;
@@ -64,8 +64,8 @@ function HomePage(props) {
     <>
       <NavBarr />
       <PageContainer>
-        {/* <Navbar /> */}
-        <TopSection></TopSection>
+        <TopSection/>
+
         <InnerPageContainer>
           <ContentContainer>
             <Title>Benefits of working with us</Title>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import CustomerExperienceCard from "./CustomerExperienceCard";
 import "./CustomerExperience.css";
-import { deviceSize } from "../../responsive";
+import { deviceSize } from "../../Responsive";
 import { useMediaQuery } from "react-responsive";
 
 const CustomerExperienceSectionWrapper = styled.div`

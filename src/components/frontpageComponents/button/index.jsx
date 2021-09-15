@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Marginer } from "../../marginer";
+import { Marginer } from "../../Marginer";
 
 const ButtonWrapper = styled.div`
   border: none;

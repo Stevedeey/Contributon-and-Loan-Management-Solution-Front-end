@@ -1,9 +1,9 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import { Marginer } from "../../marginer";
+import { Marginer } from "../../Marginer";
 import { Button } from "../button";
 
-import { deviceSize } from "../../responsive";
+import { deviceSize } from "../../Responsive";
 
 const HeroText = styled.div`
   display: flex;

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Marginer } from "../../marginer";
+import { Marginer } from "../../Marginer";
 
-import { deviceSize } from "../../responsive";
+import { deviceSize } from "../../Responsive";
 
 
 

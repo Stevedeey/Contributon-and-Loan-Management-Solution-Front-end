@@ -3,20 +3,9 @@ import styled from "styled-components";
 import { BrandLogo } from "../brandLogo";
 import { Button } from "../button";
 import "../../../style/components/navbar.css";
+import { useState } from "react";
 
 const NavContainer = styled.nav`
-  /* #show{
-    height:120px;
-    display:block;
-} */
-  /* width: 100%;
-  height: 100px;
-  background-color: black; */
-  /* .container-fluid {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-between !important;
-  } */
   .auth-button-container {
     margin-right: 10px;
     width: 19%;
@@ -71,8 +60,8 @@ const LogoSection = styled.div`
   margin-right: 5px;
 `;
 
-
 export function NavBarr() {
+  const [toggle, setToggle] = useState(true);
 
   return (
     <div className="fixAtop">
@@ -85,15 +74,19 @@ export function NavBarr() {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            onClick={() => setToggle((prev) => !prev)}
+            // data-bs-toggle="collapse"
+            // data-bs-target="#navbarScroll"
+            // aria-controls="navbarScroll"
+            // aria-expanded="false"
+            // aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarScroll">
+          <div
+            className={toggle ? "collapse navbar-collapse" : "navbar-collapse"}
+            id="navbarScroll"
+          >
             <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="e">
